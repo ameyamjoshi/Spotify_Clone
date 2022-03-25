@@ -1,0 +1,23 @@
+.loginContainer{
+    background-color: black;
+    height: 100vh;
+}
+.loginContent{
+    align-items: center;
+    padding-top: 15rem;
+    /* padding-left: 10%; */
+    display: flex;
+    flex-direction:column;
+}
+.logo_image{
+    width: 250px;
+}
+.loginButton{
+    background-color:#1DB954;
+    border: none;
+    padding:1rem 1.5rem;
+    border-radius: .5rem;
+    margin-top: 1rem;
+    color: white;
+    cursor: pointer;
+}

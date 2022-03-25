@@ -1,0 +1,37 @@
+.songbarContainer{
+    color: white;
+    /* margin-bottom: 1rem; */
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem;
+    align-items: center;
+}
+.innerSongs{
+    color: white;
+    /* margin-bottom: 1rem; */
+    display: flex;
+    justify-content: space-between;
+    /* padding: 1.25rem; */
+    align-items: center;
+}
+
+.songName{
+    flex:50%;
+    margin-top: -.5%;
+    margin-left: 1rem;
+}
+.songbarContainer:hover{
+    background-color: #212121;
+    cursor: pointer;
+}
+.songImage1{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 2rem;
+}
+@media screen and (max-width:600px) {
+    .songbarContainer{
+        margin-left: -13%;
+    }
+}

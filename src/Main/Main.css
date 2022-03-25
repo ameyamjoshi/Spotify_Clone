@@ -1,0 +1,106 @@
+.mainContainer{
+    max-width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    /* overflow: scroll; */
+  }
+  
+  .topBar{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(26, 26, 26);
+    width: 100vw;
+    height: 60px;
+  }
+  
+  .rowParent{
+    width: 100%;
+  }
+  
+  .leftSideCol{
+    margin-left: -1px;
+    position: fixed;
+    top: 0;
+    float: left;
+    padding: 0%;
+    width: 23%;
+    
+  }
+  
+  .bottomBar{
+    display: flex;
+    overflow: hidden;
+    height: 80px;
+    background-color: rgb(73, 73, 73);
+    position: fixed;
+    bottom: 0;
+    width: 110%;
+    z-index: 999;
+    color: white;
+}
+
+
+
+  
+  #MenuIcon{
+    display: none;
+  }
+  
+  .hamburgerMenu{
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    height: 30px;
+    width: 30px;
+    color: white;
+    display: none;
+    z-index: 5;
+  }
+  
+  @media screen and (max-width: 600px) {
+   
+    .leftSideCol{
+      margin-left: 0 px;
+      display: block;
+      width: 70%;
+      max-width: 300px;
+      transition: all 0.3s ease-in-out ;
+    }
+    .rightSideCol{
+      margin-left: 0%;
+      padding-top: 70px;
+      
+    }
+    .hamburgerMenu{
+      display: block;
+    }
+    #MenuIcon{
+      display: block;
+    }
+    .topBar{
+      display: block
+    }
+  }
+  
+  
+  
+  a{
+    cursor: default;
+  }
+  
+  .bottomBar{
+      /* display: none; */
+      overflow: hidden;
+      height: 80px;
+      background-color: rgb(73, 73, 73);
+      position: fixed;
+      bottom: 0;
+      width: 110%;
+      z-index: 5;
+      color: white;
+  }
+ 
+  

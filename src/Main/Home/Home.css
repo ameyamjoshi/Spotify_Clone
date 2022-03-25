@@ -1,0 +1,101 @@
+.homeContainer{
+    padding-left: 25%;
+    height: 100vh;
+    background-color: rgb(26,26,26);
+    overflow-y: scroll;
+}
+.homeContainer::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .homeContainer {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.top>span{
+    font-size:60px;
+    color:#1DB954;
+}
+.profilePic{
+    float: right;
+    margin: 1rem;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+.featuredPlaylists{
+    color: white;
+    font: 1.25rem;
+    margin: 1rem;
+    height: 100%;
+    
+}
+.featuredPlaylists>span{
+    margin: 1rem;
+    float: right;
+    color:#1DB954;
+    /* overflow: scroll; */
+    cursor: pointer;
+}
+.playlist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+   
+}
+.card{
+    margin: 1.5rem;
+    padding-bottom: 1rem;
+    background-color: rgba(70,70,70);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: transform .2s;
+}
+.card:hover{
+    transform: scale(1.1)
+}
+.songImage{
+    height: 180px;
+    width: 180px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.playlistName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weekTop{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+.weekTop>span{
+    margin: 1rem;
+    float: right;
+    color:#1DB954;
+    /* overflow: scroll; */
+    /* display: none; */
+}
+@media screen and (max-width:600px){
+    
+    .homeContainer{
+        padding-left: 5%;
+        margin-top: -11px;
+        overflow: scroll;
+        
+    }
+   
+    .top>span{
+        font-size:2rem;
+        color:#1DB954;
+    }
+    .featuredPlaylists>span{
+        display: none;
+    }
+    .playlist{
+        margin-left: 3rem;
+    }
+}

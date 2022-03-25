@@ -1,0 +1,38 @@
+.featuredPlaylistscontainer{
+    padding-left: 25%;
+    background-color: rgb(26, 26, 26);
+    height: 100%;
+    /* margin-top: -35px; */
+
+}
+.playlistF::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .playlistF {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.headingPlaylists{
+    padding-top: 2%;
+    color: #1d841d;
+    font-size: 35px;
+}
+.playlistF{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* overflow: scroll; */
+}
+@media screen and (max-width:600px){
+    .featuredPlaylistscontainer{
+        padding-left: 5%;
+        margin-top: -11px;
+    }
+    .headingPlaylists{
+        padding-top: 2%;
+        color: #1d841d;
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,51 @@
+.searchContainer{
+    height: 100vh;
+    background-color: rgb(26,26,26);
+    padding-left: 25%;
+    overflow-y: scroll;
+}
+.resultContainer::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .resultContainer {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+input{
+    border: none;
+    outline: none;
+    background-color: #383737;
+    width: 70%;
+    margin: 1%;
+    /* margin-left: 20%;
+    margin-right: 20%; */
+    border-radius: 1rem;
+    padding: .5rem;
+    color: WHITE;
+    letter-spacing: 1px;
+}
+.playlistContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+}
+.Filter{
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    outline: none;
+    padding: .5rem .5rem;
+    margin: 1rem;
+    border-radius: .1rem;
+    cursor: pointer;
+
+}
+@media screen and (max-width:600px){
+    .searchContainer{
+        padding: 5%;
+        margin-top: -11px;
+    }
+}
