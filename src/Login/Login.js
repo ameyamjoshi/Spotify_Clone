@@ -81,22 +81,23 @@ function Login() {
   }, []);
 
   return (
-    <div className='loginContainer'>
-      <div className='loginContent'>
-        <div className='logo'>
+    <div className="loginContainer">
+      <div className="loginContent">
+        <div className="logo">
           <img
-            src='spotify_logo.png'
-            alt='spotify logo'
-            className='logo_image'
+            src="spotify_logo.png"
+            alt="spotify logo"
+            className="logo_image"
           />
         </div>
         <div>
           <a href={URL}>
             <button
-              className='loginButton'
+              className="loginButton"
               onClick={() => {
                 //   dispatch(isLoggedin())
-              }}>
+              }}
+            >
               Login With spotify
             </button>
           </a>

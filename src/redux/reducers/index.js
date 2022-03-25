@@ -6,9 +6,13 @@ import PlaylistCover from "./PlaylistCover";
 import Tracks from "./Tracks";
 import User from "./User";
 
-
-
-
-let allreducers =combineReducers({PlaylistCover:PlaylistCover,isLoggedin:isLoggedin,User:User,FeaturedPlalists:FeaturedPlalists,Tracks:Tracks,CurrentSong:CurrentSong})
+let allreducers = combineReducers({
+  PlaylistCover: PlaylistCover,
+  isLoggedin: isLoggedin,
+  User: User,
+  FeaturedPlalists: FeaturedPlalists,
+  Tracks: Tracks,
+  CurrentSong: CurrentSong,
+});
 
 export default allreducers;

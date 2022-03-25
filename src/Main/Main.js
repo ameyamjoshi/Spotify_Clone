@@ -20,61 +20,52 @@ export default function Main(props) {
   return (
     <>
       <div>
-     
-        <div className='mainContainer'>
+        <div className="mainContainer">
           <div
-            className='topBar'
+            className="topBar"
             onClick={() => {
               closeMenu();
             }}
-            
-            
-            ></div>
+          ></div>
           <BrowserRouter>
-            <div className='leftSideCol' id='sideBar'>
+            <div className="leftSideCol" id="sideBar">
               <SideBar />
             </div>
 
             <IconContext.Provider value={{ className: "hamburgerMenu" }}>
               <Icons.IoMdMenu
-                id='hamburgerIcon'
+                id="hamburgerIcon"
                 onClick={() => {
                   openMenu();
                 }}
               />
             </IconContext.Provider>
             <div
-              className='rightSideCol'
+              className="rightSideCol"
               onClick={() => {
                 closeMenu();
               }}
-            
-              >
-              <Route path='/' exact component={Home} lcs={"HOME"} />
-              <Route path='/profile' exact component={Profile} />
+            >
+              <Route path="/" exact component={Home} lcs={"HOME"} />
+              <Route path="/profile" exact component={Profile} />
               <Route
-                path='/featuredPlaylists'
+                path="/featuredPlaylists"
                 exact
                 component={FeaturedPlaylists}
               />
-              <Route
-                path='/search'
-                exact
-                component={Search}
-              />
-              <Route path='/album' component={Album} />
+              <Route path="/search" exact component={Search} />
+              <Route path="/album" component={Album} />
             </div>
           </BrowserRouter>
-          {CurrentSongd != null?
-          <div className='bottomBar' id='bottomBarID'>
-          <BottomBar />
+          {CurrentSongd != null ? (
+            <div className="bottomBar" id="bottomBarID">
+              <BottomBar />
+            </div>
+          ) : (
+            <div></div>
+          )}
         </div>
-        :<div></div>}
-        </div>
-
-        
       </div>
-      
     </>
   );
 }
